@@ -1,0 +1,256 @@
+.tables-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tables-page h1 {
+  font-size: 28px;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.tables-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.table-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.table-card.reserved {
+  background: #10b981;
+  color: white;
+  border-color: #10b981;
+}
+
+.table-card.available {
+  background: white;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.table-header h3 {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+  font-weight: 500;
+  text-align: left;
+}
+
+.table-card.reserved .table-header h3 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  color: #dc2626;
+}
+
+.table-card.reserved .delete-btn {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.table-card.reserved .delete-btn:hover {
+  color: white;
+}
+
+.table-number {
+  font-size: 56px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 12px 0;
+  line-height: 1;
+}
+
+.table-card.reserved .table-number {
+  color: white;
+}
+
+.table-capacity {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.table-capacity svg {
+  width: 14px;
+  height: 14px;
+}
+
+.table-card.reserved .table-capacity {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.reserve-btn {
+  padding: 6px 12px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reserve-btn:hover {
+  border-color: #10b981;
+  color: #10b981;
+  background: #f0fdf4;
+}
+
+.reserve-btn.reserved {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+.reserve-btn.reserved:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.add-table-btn {
+  background: white;
+  border: 2px dashed #d1d5db;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  transition: all 0.3s ease;
+  min-height: 150px;
+}
+
+.add-table-btn:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+  background: #eff6ff;
+}
+
+.table-card.add-form {
+  background: white;
+  border: 2px dashed #d1d5db;
+  padding: 16px;
+  min-height: 150px;
+}
+
+.add-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+}
+
+.add-form input,
+.add-form select {
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 13px;
+  transition: border-color 0.2s;
+}
+
+.add-form input:focus,
+.add-form select:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.add-form input::placeholder {
+  color: #9ca3af;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.create-btn {
+  padding: 10px;
+  background: #4a5568;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: auto;
+}
+
+.create-btn:hover {
+  background: #374151;
+}
+
+.cancel-btn {
+  padding: 8px;
+  background: #f3f4f6;
+  color: #6b7280;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancel-btn:hover {
+  background: #e5e7eb;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .tables-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+  }
+}
