@@ -8,10 +8,10 @@ function Sidebar({ open, setOpen }) {
   const location = useLocation()
 
   const navItems = [
-    { path: "/analytics", icon: LayoutGrid, label: "Analytics" },
+    { path: "/", icon: LayoutGrid, label: "Analytics" },
     { path: "/tables", icon: Armchair, label: "Tables" },
     { path: "/orders", icon: NotebookPen, label: "Orders" },
-    { path: "/", icon: BarChart3, label: "Menu" },
+    { path: "/menu", icon: BarChart3, label: "Menu" },
   ]
 
   return (

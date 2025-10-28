@@ -18,10 +18,10 @@ function App() {
         <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
         <main className="main-content">
           <Routes>
-            <Route path="/" element={<MenuPage />} />
+            <Route path="/" element={<AnalyticsPage />} />
+            <Route path="/menu" element={<MenuPage />} />
             <Route path="/orders" element={<OrdersPage />} />
             <Route path="/tables" element={<TablesPage />} />
-            <Route path="/analytics" element={<AnalyticsPage />} />
           </Routes>
         </main>
       </div>
