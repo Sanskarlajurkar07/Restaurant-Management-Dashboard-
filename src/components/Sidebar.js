@@ -1,5 +1,3 @@
-"use client"
-
 import { Link, useLocation } from "react-router-dom"
 import { LayoutGrid, Armchair, NotebookPen, BarChart3, Menu, X } from "lucide-react"
 import "./Sidebar.css"
