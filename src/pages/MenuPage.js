@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useEffect } from "react"
 import { Search, Star, Trash2, Plus } from "lucide-react"
 import { apiClient } from "../api/client"
